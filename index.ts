@@ -3,8 +3,9 @@ import solve1 from "./1/problem";
 import solve2 from "./2/problem";
 import solve3 from "./3/problem";
 import solve4 from "./4/problem";
+import solve5 from "./5/problem";
 
-const CURRENT_DAY: number = 4;
+const CURRENT_DAY: number = 5;
 const server: Server = http.createServer();
 
 server.listen(() => {
@@ -20,6 +21,9 @@ server.listen(() => {
       break;
     case 4:
       solve4();
+      break;
+    case 5:
+      solve5();
       break;
   }
 });
